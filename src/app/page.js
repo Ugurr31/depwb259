@@ -12,7 +12,7 @@ export default function Home() {
     const [data, setData] = useState(null);
 
     const fetcher = url => fetch(url).then(r => r.json());
-    const {data: Data, error} = useSWR('https://deprem-api-orhan-hasan-diff.vercel.app/all', fetcher);
+    const {data: Data, error} = useSWR('', fetcher);
 
 
     useEffect(() => {
